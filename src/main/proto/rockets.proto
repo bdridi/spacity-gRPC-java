@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "io.workcale.spacity.grpc";
+package io.workcale.spacity.grpc;
+
+message RocketRequest {
+  string name = 1;
+  string serialNumber = 2;
+}
+
+message RocketResponse {
+  string mission = 1;
+}
+service RocketService {
+  rpc mission(RocketRequest) returns (RocketResponse);
+}
