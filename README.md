@@ -30,10 +30,9 @@ dependencies in the main java code.
 
 ### Run the server 
 
-Run the class `io.workcale.spacity.grpc.server.GrpcServer.java` 
+Run the class `io.workcale.spacity.grpc.GrpcServer.java` 
 
 ### Run the client 
 
-Run the class `io.workcale.spacity.grpc.client.GrpcClient.java`. You should see in the console a log like the following 
-`message helloResponse.getMission() = Rocket Hope - gRPC-001_XX is affected to mission Starlink-023`
+Run the class `io.workcale.spacity.grpc.GrpcSpacityClient.java`. You should see in the console the logs of all remote procedure call. 
 
